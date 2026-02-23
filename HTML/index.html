@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio | Frontend Developer</title>
+
+    
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+        <header>
+        <nav class="navbar">
+            <h1 class="logo">Elie Ndorere</h1>
+
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#calculator">GPA Calculator</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>    
+    <section id="about" class="about">
+
+<img src="/PORTFOLIO/assets/image.jpg"alt="Profole">
+        <h2>About Me</h2>
+
+        <p>
+            I am a first-year student in Gestion et Administration de Projet at INES Ruhengeri.
+            I am passionate about web development and currently focusing on frontend technologies.
+            My goal is to become a professional software engineer creating digital solutions for Rwanda.
+        </p>
+    </section>
+   <section id="skills" class="skills">
+        <h2>Technical Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">GitHub</div>
+            <div class="skill-card">Bootstrap</div>
+
+        </div>
+    </section>
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+
+        <div class="project"> 
+                     <h3>Student Result Checker</h3>
+            <p>This project helps students calculate and view their results easily.</p>
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+
+            <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+        </div>
+
+        <div class="project">
+            <img src="assets/images/project2.png" alt="Project screenshot">
+            <h3>Simple Calculator</h3>
+            <p>A calculator that performs basic arithmetic operations.</p>
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+            <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+        </div>
+
+        <div class="project">
+            <img src="assets/images/project3.png" alt="Project screenshot">
+            <h3>To-Do List App</h3>
+            <p>Allows users to manage daily tasks efficiently.</p>
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+            <a href="https://github.com/yourusername/project3" target="_blank">View on GitHub</a>
+        </div>
+
+    </section>
+    <!-- ===== GPA CALCULATOR ===== -->
+    <section id="calculator" class="calculator">
+        <h2>Student GPA Calculator</h2>
+
+        <form id="gpaForm">
+
+            <input type="number" id="course1" placeholder="Course 1 Marks" required>
+            <input type="number" id="course2" placeholder="Course 2 Marks" required>
+            <input type="number" id="course3" placeholder="Course 3 Marks" required>
+            <input type="number" id="course4" placeholder="Course 4 Marks" required>
+
+            <button type="submit">Calculate GPA</button>
+        </form>
+
+        <div id="result"></div>
+    </section>
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+
+        <p>Email: elie@example.com</p>
+        <p>Phone: +2507XXXXXXXX</p>
+        <p>GitHub: github.com/yourusername</p>
+
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>© <span id="year"></span> Elie Mdagiri. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
+
+</body>
+</html>
