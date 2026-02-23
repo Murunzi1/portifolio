@@ -1,27 +1,19 @@
-// ===== DYNAMIC YEAR IN FOOTER =====
 const yearSpan = document.getElementById('year');
 yearSpan.textContent = new Date().getFullYear();
-// GPA Calculator
 const gpaForm = document.getElementById('gpaForm');
 const resultDiv = document.getElementById('result');
 
 gpaForm.addEventListener('submit', function(e) {
     e.preventDefault(); // prevent page reload
-
-    // Get course marks
     const course1 = parseFloat(document.getElementById('course1').value);
     const course2 = parseFloat(document.getElementById('course2').value);
     const course3 = parseFloat(document.getElementById('course3').value);
     const course4 = parseFloat(document.getElementById('course4').value);
-
-    // Validate input
     if(isNaN(course1) || isNaN(course2) || isNaN(course3) || isNaN(course4)){
         resultDiv.textContent = "Please enter valid numbers for all courses.";
         resultDiv.style.color = "red";
         return;
     }
-
-    // Ensure marks are between 0–100
     const courses = [course1, course2, course3, course4];
     for(let mark of courses){
         if(mark < 0 || mark > 100){
@@ -31,7 +23,6 @@ gpaForm.addEventListener('submit', function(e) {
         }
     }
 
-    // Calculate grade points
     let totalPoints = 0;
     let classification = "";
 
